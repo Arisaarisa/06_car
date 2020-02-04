@@ -73,15 +73,18 @@ echo $car1->infomation();
 echo '<br>';
 
 // 車名(車種)を更新
-echo $car1->setName = 'アルファード';
+$car1->setName('アルファード');
+echo $car1->getName();
 echo '<br>';
 
 // 車体番号を取得
-echo $car1->setNumber = 200;
+$car1->setNumber(200);
+echo $car1->getNumber();
 echo '<br>';
 
 // カラーを取得
-echo $car1->setColor = 'red';
+$car1->setColor('red');
+echo $car1->getColor();
 echo '<br>';
 // 車の情報表示を表示
 echo $car1->infomation();
