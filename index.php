@@ -4,9 +4,10 @@
 
 class Car
 {
-  private $name;
-  private $number;
-  private $color;
+  public $name;
+  public $number;
+  public $color;
+  public $infomation;
   
   public function __construct($name, $number, $color)
   {
@@ -15,31 +16,37 @@ class Car
     $this->color = $color;
   }
   
-  public function getName() {
+  public function getName() 
+  {
     return $this->name;
   }
   
-  public function getNumber() {
+  public function getNumber() 
+  {
     return $this->number;
   }
   
-  public function getColor() {
+  public function getColor() 
+  {
     return $this->color;
   }
   
-  public function setName($name) {
+  public function setName($name) 
+  {
     $this->name = $name;
   }
   
-  public function setNumber($number) {
+  public function setNumber($number) 
+  {
     $this->number = $number;
   }
   
-  public function setColor($color) {
+  public function setColor($color) 
+  {
     $this->color = $color;
   }
   
-  public function setInfomation() {
+  public function selfInfomation() {
     echo $this->getInfomation();
   }
   public function getInfomation() {
@@ -65,7 +72,7 @@ echo $car1->getColor();
 echo '<br>';
 
 // 車の情報表示を表示
-echo $car1->setInfomation();
+echo $car1->selfInfomation();
 echo '<br>';
 
 // 車名(車種)を更新
@@ -79,9 +86,6 @@ echo '<br>';
 // カラーを取得
 echo $car1->setColor = 'red';
 echo '<br>';
-
-
 // 車の情報表示を表示
-// $car1->selfIntrodaction();
-echo $car1->setInfomation();
+echo $car1->selfInfomation();
 echo '<br>';
